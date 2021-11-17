@@ -30,13 +30,18 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  /* transform: rotateY(180deg); */
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.card:hover .card-wrapper {
+.card-wrapper.card_active {
   transform: rotateY(180deg);
 }
+.card-wrapper.card_correct {
+  transform: rotateY(180deg);
+}
+/* .card:hover .card-wrapper {
+  transform: rotateY(180deg);
+} */
 
 /* Position the front and back side */
 .card-front, .card-back {
